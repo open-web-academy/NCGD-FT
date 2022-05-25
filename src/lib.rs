@@ -63,7 +63,7 @@ pub struct MetaToken {
 impl MetaToken {
     /// Initializes the contract with the given total supply owned by the given `owner_id`.
     #[init]
-    pub fn init_contract(owner_id: AccountId, treasury_id: AccountId, strw_mint_cost: u128, strw_reset_cost: u128, strw_evolve_cost: u128) -> Self {
+    pub fn init_contract(owner_id: AccountId) -> Self {
         //validate default metadata
         // internal::default_ft_metadata().assert_valid();
         Self {
